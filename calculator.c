@@ -10,26 +10,60 @@
 
 int main(int argc, char **argv) {
 
-  double a, b;
+  double a, b, x;
   int choice;
 
   printf("Enter operand a: ");
   scanf("%lf", &a);
+    if(a>0){
+      printf("a is positive!\n")
+      printf("the value of sqrt(a) = %f\n", sqrt(a));
+    } else {
+      printf("a is not positive, cannot compute its square root\n");
+    }
+      
 
   printf("Enter operand b: ");
   scanf("%lf", &b);
+    if(b>0){
+      printf("b is positive!\n")
+      printf("the value of sqrt(b) = %f\n", sqrt(b));
+    } else {
+      printf("b is not positive, cannot compute its square root\n");
+    } else if(b == 0) {
+      printf("b is zero, its square root is zero\n");
+      printf("%f\n", sqrt(b*-1.0));
+    }
 
+  
+double Calculator;
   printf("Enter operation:\n");
-  printf("(1) Addition\n");
-  printf("(2) Subtraction\n");
-  printf("(3) Multiplication\n");
-  printf("(4) Division\n");
-  printf("(5) Minimum\n");
-  printf("(6) Power\n");
-  printf("(7) log_a(b)\n");
-  scanf("%d", &choice);
+  printf("1. Addition\n");
+  scanf("%lf", &Calculator);
+  printf("2. Subtraction\n");
+  scanf("%lf", &Calculator);
+  printf("3. Multiplication\n");
+  scanf("%lf", &Calculator);
+  printf("4.  Division\n");
+  scanf("%lf", &Calculator);
+  
+  switch(Calculator){
+    case 1:
+        printf("%lf\n",a+b);
+        break;
+      case2:
+        printf("%lf\n",a-b);
+        break;
+      case3:
+        printf("%lf\n",a*b);
+        break;
+      case4:x=a/b
+        printf("%lf\n",a/b);
+        break;
+     
+  }
 
-  //TODO: process the results here
+log(doubleX))//TODO: process the results here
 
 
   return 0;
