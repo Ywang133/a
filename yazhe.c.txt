@@ -1,0 +1,44 @@
+# include <stdio.h>
+# include <math.h>
+
+int main (viod)
+{
+
+if (x < 17000) {
+
+printf ("The tax of x!\n");
+
+printf ("the value of x" =((10/100)(x-0)) %f\n", x);
+
+} else if (17000<x<69000) {
+
+printf ("The tax of x!\n");
+
+printf("the value of x" = 1700+((15/100)(x-17000)) %f\n",x);
+
+} else if (69000<x<139350) {
+
+printf ("The tax of x!\n");
+
+printf ("the value of x" = 9500+((25/100)(x-69000)) %f\n,x);
+
+} else if (139350<x<212300) {
+
+printf ("The tax of x!\n");
+
+printf("the value of x" = 27087.50+((28/100)(x-139350)) %f\n,x);
+
+} else if (212300<x<379150) {
+
+printf ("The tax of x!\n");
+
+printf("the value of x" =47513.50+((33/100)(x-212300)) %f\n,x);
+
+} else if (379150<x<inf) {
+
+printf ("The value of x!\n");
+
+printf("the value of x" = 102574.00+((35/100)(x-379150)) %f\n,x);
+}
+return 0:
+}
